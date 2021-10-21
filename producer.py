@@ -6,7 +6,8 @@ import pika, os
 #url = "amqps://zaicmnji:nwq_gWv6gm41TiBaPSc8tywaG-dOFcer@puffin.rmq2.cloudamqp.com/zaicmnji"
 url="amqps://localhost"
 print(url)
-params = pika.URLParameters(url)
+#params = pika.URLParameters(url)
+params ="localhost"
 
 try:
   connection = pika.BlockingConnection(params)
